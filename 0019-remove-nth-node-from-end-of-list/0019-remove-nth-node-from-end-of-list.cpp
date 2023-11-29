@@ -10,6 +10,9 @@
  */
 class Solution {
 public:
+    
+/*-----------------0(n) Approach--------------------*/
+    
     ListNode* removeNthFromEnd(ListNode* head, int n) 
     {
         ListNode* start = new ListNode();
@@ -29,6 +32,10 @@ public:
         slow->next = slow->next->next;
 
         return start->next;
+        
+        
+/*---------------O(2n) Approach-------------------*/
+        
         /* ListNode* temp = head;
         int cnt = 0;
 
