@@ -17,7 +17,7 @@ public:
 	    int val1,val2;
 	    string ans;
 	    
-	    while(i >= 0 || j >= 0)
+	    while(i >= 0 || j >= 0)  //there are leading zeroes in input
 	    {
 	         if(i >= 0)
 	         val1 = A[i] - '0';
@@ -33,7 +33,7 @@ public:
 	         
 	         ans += to_string(sum%2);
 	         
-	         c = sum/2;
+	         c = sum/2; //so that carry can be checked for outside condition
 	         
 	         i--;
 	         j--;
